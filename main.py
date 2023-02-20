@@ -12,7 +12,7 @@ openai.api_key = OPENAI_API_KEY
 
 @bot.message_handler(commands=['start'])
 def message_start(message):
-    bot.send_message(message.chat.id, f'Привіт, {message.from_user.username}!\nПоспілкуємось?')
+    bot.send_message(message.chat.id, f'Привіт, {message.from_user.username}!\nЯка інформація Вас цікавить?')
 
 @bot.message_handler(func=lambda _: True)
 def handle_message(message):
